@@ -27,7 +27,7 @@ float xPos = 0;
 void setup() {
   size(800, 600);
   background(255);
-  sliders(); 
+
   //create the font
   font = createFont("Times New Roman", 12);
   textFont(font);
@@ -37,9 +37,11 @@ void draw() {
 
   background(255);
 
+  buttons();
+
   //label the sliders
-  write("Width in Inches", 215, 28);
-  write("Height in Inches", 215, 58);
+  write("Increase/Decrease the Width in Inches", 160, 28);
+  write("Increase/Decrease the Height in Inches", 160, 58);
 
   fabricSize(inputX, inputY);
 
@@ -92,9 +94,48 @@ void zipper(float l) {
   line(xPos-zipEx+9, 56, xPos + l + 5, 56);
 }
 
+void buttons() {
+  //draw buttons
+  int butLength = 60;
+  int butHeight = 20;
+  int butDisplace = 30;
+  rect(20, 15, butLength, butHeight);
 
+  line(50, 20, 50, 30);
+  line(45, 25, 55, 25);
 
+  rect(90, 15, butLength, butHeight);
 
+  line(115, 25, 125, 25);
+
+  rect(20, 15 + butDisplace, butLength, butHeight);
+
+  line(50, 20 +butDisplace, 50, 30+ butDisplace);
+  line(45, 25+butDisplace, 55, 25+ butDisplace);
+
+  rect(90, 15 + butDisplace, butLength, butHeight);
+
+  line(115, 25+butDisplace, 125, 25+ butDisplace);
+}
+
+void mousePressed() {
+  float increment = 2;
+  if ((20<mouseX) && (mouseX<80) && (15<mouseY) && (mouseY<35) && inputX < 70) {
+    inputX = inputX + increment;
+  }
+
+  if ((90<mouseX) && (mouseX<150) && (15<mouseY) && (mouseY<35) && inputX > 2) {
+    inputX = inputX - increment;
+  }
+
+  if ((20<mouseX) && (mouseX<80) && (45<mouseY) && (mouseY<75) && inputY < 48) {
+    inputY = inputY + increment;
+  }
+
+  if ((90<mouseX) && (mouseX<150) && (45<mouseY) && (mouseY<75) && inputY > 2) {
+    inputY = inputY - increment;
+  }
+}
 
 
 
