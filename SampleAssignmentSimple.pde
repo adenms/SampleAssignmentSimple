@@ -5,11 +5,9 @@ This program draws a pencil bag, and the template for the pencil bag with the
  and Science of Computing Class, Fall 2015. By Aden Misra Siebel, September 2015
  */
 
-import controlP5.*;
 
 import processing.pdf.*;
 
-ControlP5 cp5;
 
 PFont font;
 
@@ -78,25 +76,7 @@ void fabricSize(float x, float y) {
   fabriY = ((y*2)+.5);
 }
 
-void sliders() {
-  cp5 = new ControlP5(this);
 
-  cp5.addSlider("inputX")
-    .setPosition(10, 10)
-      .setSize(200, 25)
-        .setRange(2, 70)
-          .setSliderMode(Slider.FLEXIBLE)
-            ;
-
-
-
-  cp5.addSlider("inputY")
-    .setPosition(10, 40)
-      .setSize(200, 25)
-        .setRange(2, 48)
-          .setSliderMode(Slider.FLEXIBLE)
-            ;
-}
 
 void write(String text, int x, int y) {
   fill(0);
