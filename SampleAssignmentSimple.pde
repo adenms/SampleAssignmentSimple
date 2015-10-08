@@ -6,7 +6,6 @@ This program draws a pencil bag, and the template for the pencil bag with the
  */
 
 
-import processing.pdf.*;
 
 
 PFont font;
