@@ -68,9 +68,6 @@ void draw() {
 
   zipper(fabriX*displayScale);
   
-  fill(0);
-  rect(0,0,800,600);
-  noFill();
 }
 
 void fabricSize(float x, float y) {
