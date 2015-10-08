@@ -39,16 +39,13 @@ void draw() {
 
   buttons();
 
-  //label the sliders
   write("Increase/Decrease the Width in Inches", 160, 28);
   write("Increase/Decrease the Height in Inches", 160, 58);
 
   fabricSize(inputX, inputY);
 
   xPos = (width/2)+(width/4)-(fabriX*(displayScale/2));
-  //bag display
   rect((width/4)-(inputX*(displayScale/2)), displayY, inputX*displayScale, inputY*displayScale, 7, 7, 4, 4);
-  //template display
   line(xPos, displayY + fabriY*displayScale, (width/2)+(width/4)+ fabriX*displayScale/2, displayY + fabriY*displayScale);
   line(xPos, displayY, (width/2)+(width/4)+ fabriX*displayScale/2, displayY);
 
@@ -95,7 +92,6 @@ void zipper(float l) {
 }
 
 void buttons() {
-  //draw buttons
   int butLength = 60;
   int butHeight = 20;
   int butDisplace = 30;
