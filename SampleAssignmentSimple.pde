@@ -37,6 +37,8 @@ void draw() {
   background(255);
 
   buttons();
+  zipper(fabriX*displayScale);
+
 
   write("Increase/Decrease the Width in Inches", 160, 28);
   write("Increase/Decrease the Height in Inches", 160, 58);
@@ -66,7 +68,6 @@ void draw() {
     }
   }
 
-  zipper(fabriX*displayScale);
   
 }
 
