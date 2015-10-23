@@ -40,8 +40,8 @@ void draw() {
   zipper(fabriX*displayScale);
 
 
-  write("Increase/Decrease the Width in Inches", 160, 28);
-  write("Increase/Decrease the Height in Inches", 160, 58);
+  writeText("Increase/Decrease the Width in Inches", 160, 28);
+  writeText("Increase/Decrease the Height in Inches", 160, 58);
 
   fabricSize(inputX, inputY);
 
@@ -78,7 +78,7 @@ void fabricSize(float x, float y) {
 
 
 
-void write(String text, int x, int y) {
+void writeText(String text, int x, int y) {
   fill(0);
   text(text, x, y);
   noFill();
