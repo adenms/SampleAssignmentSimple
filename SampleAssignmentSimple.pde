@@ -45,12 +45,12 @@ void draw() {
 
   fabricSize(inputX, inputY);
 
-  xPos = (width/2)+(width/4)-(fabriX*(displayScale/2));
-  rect((width/4)-(inputX*(displayScale/2)), displayY, inputX*displayScale, inputY*displayScale, 7, 7, 4, 4);
-  line(xPos, displayY + fabriY*displayScale, (width/2)+(width/4)+ fabriX*displayScale/2, displayY + fabriY*displayScale);
-  line(xPos, displayY, (width/2)+(width/4)+ fabriX*displayScale/2, displayY);
+  xPos = (800/2)+(800/4)-(fabriX*(displayScale/2));
+  rect((800/4)-(inputX*(displayScale/2)), displayY, inputX*displayScale, inputY*displayScale, 7, 7, 4, 4);
+  line(xPos, displayY + fabriY*displayScale, (800/2)+(800/4)+ fabriX*displayScale/2, displayY + fabriY*displayScale);
+  line(xPos, displayY, (800/2)+(800/4)+ fabriX*displayScale/2, displayY);
 
-  line(xPos+5, displayY + fabriY*displayScale/2, (width/2)+(width/4)+ fabriX*displayScale/2-5, displayY + fabriY*displayScale/2);
+  line(xPos+5, displayY + fabriY*displayScale/2, (800/2)+(800/4)+ fabriX*displayScale/2-5, displayY + fabriY*displayScale/2);
 
   for (int x=0; x<lineRep; x++) {
     if (x % 2 != 0) {
