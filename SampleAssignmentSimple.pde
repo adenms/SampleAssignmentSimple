@@ -21,7 +21,7 @@ float displayScale = 5;
 float displayY = 90;
 
 int lineRep = 50;
-float xPos = 0;
+float xPos = 500;
 
 void setup() {
   size(800, 600);
