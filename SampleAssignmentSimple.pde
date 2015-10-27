@@ -43,8 +43,9 @@ void draw() {
   writeText("Increase/Decrease the Width in Inches", 160, 28);
   writeText("Increase/Decrease the Height in Inches", 160, 58);
 
-  fabricSize(inputX, inputY);
-
+  fabriX = inputX+1;
+  fabriY = ((inputY*2)+.5);
+  
   xPos = (800/2)+(800/4)-(fabriX*(displayScale/2));
   rect((800/4)-(inputX*(displayScale/2)), displayY, inputX*displayScale, inputY*displayScale, 7, 7, 4, 4);
   line(xPos, displayY + fabriY*displayScale, (800/2)+(800/4)+ fabriX*displayScale/2, displayY + fabriY*displayScale);
@@ -72,8 +73,7 @@ void draw() {
 }
 
 void fabricSize(float x, float y) {
-  fabriX = x+1;
-  fabriY = ((y*2)+.5);
+
 }
 
 
