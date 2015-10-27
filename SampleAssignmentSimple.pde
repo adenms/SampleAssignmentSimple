@@ -12,8 +12,8 @@ PFont font;
 
 int zipEx = 10;
 
-float fabriX = 0;
-float fabriY = 0;
+float fabriX = 10;
+float fabriY = 10;
 float inputX = 20;
 float inputY = 10;
 
